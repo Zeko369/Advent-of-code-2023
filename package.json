@@ -1,0 +1,31 @@
+{
+	"name": "advent-of-code-2023",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "git@github.com:Zeko369/Advent-of-code-2023.git",
+	"author": "Fran Zekan <zekan.fran369@gmail.com>",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"pull": "bun ./lib/pull.ts",
+		"day": "bun --watch ./src/${day}/index.ts",
+		"today": "bun --watch ./src/$(date +%d)/index.ts"
+	},
+	"fig": {
+		"day": {
+			"icon": "🎄"
+		}
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.4.0",
+		"@types/lodash": "^4.14.191",
+		"@types/lodash-es": "^4.17.12",
+		"bun-types": "^1.0.14",
+		"nodemon": "^2.0.15"
+	},
+	"dependencies": {
+		"@types/node": "^20.10.1",
+		"lodash-es": "^4.17.21",
+		"typescript": "^5.3.2"
+	}
+}

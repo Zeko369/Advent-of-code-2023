@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "NodeNext",
+		"noEmit": true,
+		"allowJs": true,
+		"checkJs": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": false,
+		"skipLibCheck": true,
+		"types": ["bun-types"],
+		"baseUrl": ".",
+		"paths": { "~/*": ["./*"] },
+		"allowImportingTsExtensions": true
+	},
+	"include": ["./src/**/*", "./lib/**/*", "./template/**/*"]
+}
