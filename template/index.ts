@@ -1,7 +1,7 @@
 // @ts-check
 import * as l from "lodash-es";
 
-import { submit } from "~/lib/submit.ts";
+import { submit, copySolution } from "~/lib/submit.ts";
 
 import * as g from "~/shared/globals.ts";
 import { loadData } from "~/shared/load.ts";
@@ -30,13 +30,19 @@ import { loadData } from "~/shared/load.ts";
 			continue;
 		}
 
-		const score = 0;
-		const score2 = 0;
+		let score = 0;
+		let score2 = 0;
 
-		// console.log("Task1", score);
+		for (let i = 0; i < data.length; i++) {
+			console.log(data[i]);
+		}
+
+		console.log("Task1", score);
+		// isMain && (await copySolution(1, score));
 		// isMain && (await submit(1, score));
 
-		// console.log("Task2", score2);
+		console.log("Task2", score2);
+		// isMain && (await copySolution(2, score2));
 		// isMain && (await submit(2, score2));
 	}
 })();

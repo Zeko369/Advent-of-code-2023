@@ -10,7 +10,7 @@ if (!process.env.SESSION_COOKIE) {
 
 const TEMPLATE_PATH = join(dirname(fileURLToPath(import.meta.url)), "../template/index.ts");
 
-const YEAR = 2022;
+const YEAR = 2023;
 const DAY = process.env.DATE ? parseInt(process.env.DATE) : new Date().getDate();
 
 const baseURL = `https://adventofcode.com/${YEAR}/day/${DAY}`;
